@@ -18,17 +18,25 @@ body{
     height: 600px;
 }
 .carousel-image-1{
-    background: linear-gradient(rgba(0,0,0,.3), rbga(0,0,0,.4)),
-    url('./Images/watchpic.jpg');
+    background-image: url('./images/watchpic.jpg');
     background-size:cover;
 }
 .carousel-image-2{
-    background: linear-gradient(rgba(0,0,0,.3), rbga(0,0,0,.4)),
-    url('./Images/heropic.png');
+    background-image: url('images/heropic.png');
     background-size:cover;
 }
 .carousel-image-3{
-    background: linear-gradient(rgba(0,0,0,.3), rbga(0,0,0,.4)),
-    url('./Images/chickenpic.jpg');
+    background-image: url('images/chickenpic.jpg');
     background-size:cover;
+}
+.title-color{
+    color:#fff;
+}
+.btn-color{
+    background:#000;
+    color:#fff;
+}
+.btn-color:hover{
+    color: gray;
+    
 }

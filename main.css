@@ -22,11 +22,11 @@ body{
     background-size:cover;
 }
 .carousel-image-2{
-    background-image: url('images/heropic.png');
+    background-image: url('images/feetpics2.jpg');
     background-size:cover;
 }
 .carousel-image-3{
-    background-image: url('images/chickenpic.jpg');
+    background-image: url('images/feetpics7.jpg');
     background-size:cover;
 }
 .title-color{
@@ -146,6 +146,10 @@ body{
 .product-img:active{
     box-shadow: 1px 0px 1px 4px rgba(247, 243, 243, 0.9);
     transform:scale(1.1);
+}
+.product-img{
+    height: 300px;
+    width: 300px;
 }
 /*=====end of Product Ssection=======*/
 /*=====about section=======*/

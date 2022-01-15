@@ -18,7 +18,7 @@ body{
     height: 600px;
 }
 .carousel-image-1{
-    background-image: url('./images/watchpic.jpg');
+    background-image: url('./images/feetpics12.jpg');
     background-size:cover;
 }
 .carousel-image-2{
@@ -147,10 +147,54 @@ body{
     box-shadow: 1px 0px 1px 4px rgba(247, 243, 243, 0.9);
     transform:scale(1.1);
 }
-
-
-
-
-
-
 /*=====end of Product Ssection=======*/
+/*=====about section=======*/
+#about-sec{
+    margin-top: 25px;
+}
+.text-color{
+    color: #000;
+}
+.watch-img{
+    margin-top: 35px;
+}
+.watch-img{
+animation-name:imgLeft;
+animation-duration: 3s;
+}
+.about-text{
+    animation-name: textRight;
+    animation-duration: 3s;
+}
+@keyframes imgLeft{
+    0%{
+        transform:translateX(-120px);
+        opacity:0;
+
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes textRight{
+    0%{
+        transform: translateX(30px);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity:1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*=====end of about section=======*/

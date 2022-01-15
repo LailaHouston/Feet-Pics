@@ -34,10 +34,20 @@ body{
 }
 .btn-color{
     background:#000;
-    color:#fff;
+    color:grey;
 }
 .btn-color:hover{
-    color: gray;
+    color: #fff;
     
 }
-dad
+@keyframes slide-btn{
+    16%{
+        transform: translateY(8px);
+    }
+    33%{
+        transform: translateY(-6px);
+    }
+    50%{
+        transform: translateY(4px);
+    }
+}

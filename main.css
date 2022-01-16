@@ -22,11 +22,11 @@ body{
     background-size:cover;
 }
 .carousel-image-2{
-    background-image: url('.Images/feetpics2.jpg');
+    background-image: url("Images/feetpics2.jpg");
     background-size:cover;
 }
 .carousel-image-3{
-    background-image: url('Images/feetpics7.jpg');
+    background-image: url("Images/feetpics7.jpg");
     background-size:cover;
 }
 .title-color{

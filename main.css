@@ -11,7 +11,7 @@ body{
     outline: none!important;
 }
 .bg-black{
-    background: #000;
+    background: rgb(71, 9, 129);
 }
 /*===========Slider========*/
 .carousel-item{
@@ -33,11 +33,11 @@ body{
     color:#fff;
 }
 .btn-color{
-    background:#000;
-    color:grey;
+    background:#fff;
+    color:black;
 }
 .btn-color:hover{
-    color: #fff;
+    color: rgb(71, 9, 129);
     
 }
 @keyframes slide-btn{
@@ -80,13 +80,13 @@ body{
     display: inline-block;
     font-size: 32px;
     margin-bottom: 16px;
-    color:#000;
+    color:rgb(71, 9, 129);
     padding: 8px 16px;
 }
 /*===end of service section====*/
 /*=====Product Ssection=======*/
 #products{
-    background: #000;
+    background: rgb(99, 99, 99);
 }
 .product-title{
     color:#fff;
@@ -148,8 +148,8 @@ body{
     transform:scale(1.1);
 }
 .product-img{
-    height: 300px;
-    width: 300px;
+    height: 330px;
+    width: 330px;
 }
 /*=====end of Product Ssection=======*/
 /*=====about section=======*/

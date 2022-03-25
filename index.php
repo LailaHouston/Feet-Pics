@@ -50,6 +50,31 @@
         </div>
     </nav>
     <!--End of Nav Bar--> 
+
+    <!--php -->
+
+    <form method="GET">
+      <input type="text" name="person">
+      <input type="text" name="verb">
+      <input type="text" name="noun">
+      <input type="text" name="place">
+      <button>SUBMIT</button>
+    </form>
+
+    <?php
+      $name = $_GET['person'];
+      $activity = $_GET['verb'];
+      $object = $_GET['noun'];
+      $location = $_GET['place'];
+      echo $name." is a someone who likes to ".$activity.". However, at night,
+       he goes to the ".$location." and unplugs the ".$object." so that nobody can ".$activity." ever again!";
+      
+    ?>
+
+
+
+<!--end of php -->
+
 <!--Slider-->
 <section id="main">
   <div id="Carousel" class="carousel slide" data-ride="carousel">
@@ -60,7 +85,6 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item carousel-image-1 active">
-          
           <div class="container">
             <div class="carousel-caption d-none d-sm-block text right mb-5">
               <h1 class="display-3 title-color">Welcome to Feet Pics</h1>

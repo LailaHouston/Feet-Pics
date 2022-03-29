@@ -32,7 +32,7 @@
                   <a href="#" class="nav-link">Human Feet</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Dog Feet</a>
+                  <a href="switch.php" class="nav-link">Switch</a>
                 </li> 
                 <li class="nav-item">
                   <a href="calendar.php" class="nav-link">Calendar</a>

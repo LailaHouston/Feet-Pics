@@ -35,10 +35,10 @@
                   <a href="#" class="nav-link">Dog Feet</a>
                 </li> 
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Horse Feet</a>
+                  <a href="calendar.php" class="nav-link">Calendar</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Other Feet</a>
+                  <a href="calculator.php" class="nav-link">Calculator</a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">

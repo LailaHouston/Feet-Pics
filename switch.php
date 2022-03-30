@@ -8,6 +8,9 @@
 
 <body>
 <?php
+      include 'header.php';
+  ?>
+<?php
    
     $food = "Corn";
 
@@ -27,12 +30,6 @@
             default:
                 echo "You have to pick a food!";
     }
-
-
-
-
-
-
 
 ?>
 

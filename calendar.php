@@ -8,6 +8,9 @@
 
 <body>
 <?php
+      include 'header.php';
+  ?>
+<?php
     $dayofweek = date("w");
     echo $dayofweek;
 

@@ -2,6 +2,10 @@
     include 'functions/user-functions.php';
 ?>
 
+<?php
+    session_start();
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -54,3 +58,14 @@
         </div>
     </nav>
 
+
+  <?php
+  $_SESSION['username'] = "LailaHouston";
+echo $_SESSION['username'];
+
+if (!isset($_SESSION['username'])) {
+  echo "\nYou are not logged in!";
+}   else{
+      echo "\nYou are logged in!";
+}
+  ?>

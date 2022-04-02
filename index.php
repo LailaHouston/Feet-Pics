@@ -14,9 +14,16 @@
 
 
 
+<?php
 
+/*
+$_COOKIE 
+$_SESSION
+*/
 
-
+setcookie("name", "Laila", time() - 172800);
+$_SESSION['name'] = "Laila";
+?>
 
     <!--php -->
 

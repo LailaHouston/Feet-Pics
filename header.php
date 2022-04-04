@@ -58,6 +58,37 @@
         </div>
     </nav>
 
+    <header>
+        <nav class="nav-header-main">
+          <a class="header-logo" href="index.php">
+            <img src="images/chickenpic.jpg" alt="logo">
+          </a>
+          <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">about me</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+        <div class="header-login">
+          <form action="includes/login.in.php" method="post">
+            <input type="text" name="mailuid" placeholder="Username/E-mail..">
+            <input type="text" name="pwd" placeholder="password">
+            <button type="submit" name="login-submit">Login</button>
+          </form>
+
+          <a href="signup.php">Signup</a>
+            <form action="includes/logout.in.php" method="post">
+            <button type="submit" name="logout-submit">Logout</button>
+
+          </form>
+        </div>
+       
+    </header>
+
+
+
+
 
   <?php
   $_SESSION['username'] = "LailaHouston";

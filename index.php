@@ -1,10 +1,19 @@
-
-    <!--End of Nav Bar--> 
-    <!---php for header---->
+   <!---php for header---->
 
   <?php
       include 'header.php';
   ?>
+
+      <main>
+        <div class="wrapper-main">
+          <section class="section-default">
+        <p>You are Logged Out!</p>
+        <p>You are Logged in!</p>
+          </section>
+        </div>
+      </main>
+
+
 
 <section>
     <div class="someMainContent">

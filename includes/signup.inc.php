@@ -70,7 +70,7 @@ mysqli_close($conn);
 
 }
 else {
-    header("Location: ../singup.php");
+    header("Location: ../signup.php");
     exit();
 }
 

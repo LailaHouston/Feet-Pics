@@ -4,8 +4,8 @@ if (isset($_POST['login-submit'])) {
 
     require 'dbh.inc.php';
 
-    $mailuid = $_POST['mailuid']
-    $password = $_POST['pwd']
+    $mailuid = $_POST['mailuid'];
+    $password = $_POST['pwd'];
 
     if (empty($mailuid) || empty($password)){
         header("Location: ../index.php?error=emptyfields");
@@ -18,14 +18,13 @@ if (isset($_POST['login-submit'])) {
             header("Location: ../index.php?error=sqlerror");
             exit();
         }
-        /*in the video guy said there was an error and that its "$mailuid, $mailuid"
-        instead of "$mailuid, $password" idk */
+        
     else { 
         mysqli_stmt_bind_param($stmt, "ss", $mailuid, $mailuid); 
         mysqli_stmt_execute($stmt);
         $result = mysqli_stmt_get_result($stmt);
-        if ($row = mysqli_fetch_assoc()) {
-            $pwdCheck = pasword_verify(password, $row['pwdUsers']);
+        if ($row = mysqli_fetch_assoc($result)) {
+            $pwdCheck = password_verify($password, $row['pwdUsers']);
             if ($pwdCheck == false) {
                 header("Location: ../index.php?error=wrongpwd");
                 exit();
@@ -34,6 +33,9 @@ if (isset($_POST['login-submit'])) {
                 session_start();
                 $_SESSION['userId'] = $row['idUsers'];
                 $_SESSION['useruid'] = $row['uidUsers']; /* video timestamp 1:33:56 */
+
+                header("Location: ../index.php?login=success");
+                exit();
             }
             else {
                 header("Location: ../index.php?error=wrongpwd");

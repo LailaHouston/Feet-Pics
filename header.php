@@ -5,6 +5,7 @@
 <?php
     session_start();
 ?>
+<!--maybe put session_start(); twice @ 1:36:38-->
 
 <!doctype html>
 <html lang="en">
@@ -71,19 +72,23 @@
         </ul>
         </nav>
         <div class="header-login">
-          <form action="includes/login.in.php" method="post">
-            <input type="text" name="mailuid" placeholder="Username/E-mail..">
-            <input type="text" name="pwd" placeholder="password">
-            <button type="submit" name="login-submit">Login</button>
-          </form>
-
-          <a href="signup.php">Signup</a>
-            <form action="includes/logout.in.php" method="post">
-            <button type="submit" name="logout-submit">Logout</button>
-
-          </form>
+          <?php 
+            if (isset($_SESSION['userId'])) {
+              echo ' <form action="includes/logout.inc.php" method="post">
+              <button type="submit" name="logout-submit">Logout</button>
+            </form>';
+            }
+            else {
+              echo '<form action="includes/login.inc.php" method="post">
+              <input type="text" name="mailuid" placeholder="Username/E-mail..">
+              <input type="text" name="pwd" placeholder="password">
+              <button type="submit" name="login-submit">Login</button>
+            </form>
+            <a href="signup.php">Signup</a>';
+            }
+          ?>
+          
         </div>
-       
     </header>
 
 

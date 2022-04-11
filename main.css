@@ -117,7 +117,7 @@ body{
     width: 90%;
     opacity: 0;
     background: radial-gradient(ellipse at center, rgba(248, 248, 248, 0.35) 0%,
-    rgb(247, 244, 244, 0)80%);
+    rgb(247, 244, 244, 0) 80%);
     transition-duration: 0.3s;
     transition-property: transform, opacity;
 }
